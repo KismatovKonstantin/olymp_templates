@@ -32,6 +32,9 @@ def main():
 
         open(dir3 + "/input.txt", "x")
         print("File " + new_contest + "/" + name + "/input.txt created!")
+        
+        open(dir3 + "/output.txt", "x")
+        print("File " + new_contest + "/" + name + "/output.txt created!")
 
 if __name__ == "__main__":
     main()

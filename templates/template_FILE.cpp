@@ -1,46 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
-#define ln '\n'
-#define All(x) (x).begin(), (x).end()
-#define Allr(x) (x).rbegin(), (x).rend()
-#define Allf(x) x.begin() + 1, x.end()
-
-#define fi(a, b) for (int i = (a); i <= (b); i++)
-#define fj(a, b) for (int j = (a); j <= (b); j++)
-#define fo(a, b) for (int o = (a); o <= (b); o++)
-#define fq(a, b) for (int q = (a); q <= (b); q++)
-#define fe(a, b) for (int e = (a); e <= (b); e++)
-#define fw(a, b) for (int w = (a); w <= (b); w++)
-
-#define fri(a, b) for (int i = (a); i >= (b); i--)
-#define frj(a, b) for (int j = (a); j >= (b); j--)
-#define fro(a, b) for (int o = (a); o >= (b); o--)
-#define frq(a, b) for (int q = (a); q >= (b); q--)
-#define fre(a, b) for (int e = (a); e >= (b); e--)
-#define frw(a, b) for (int w = (a); w >= (b); w--)
-
-#define FI(a, b, c) for (int i = (a); i <= (b); i += (c))
-#define FJ(a, b, c) for (int j = (a); j <= (b); j += (c))
-#define FO(a, b, c) for (int o = (a); o <= (b); o += (c))
-#define FQ(a, b, c) for (int q = (a); q <= (b); q += (c))
-#define FE(a, b, c) for (int e = (a); e <= (b); e += (c))
-
-#define FRI(a, b, c) for (int i = (a); i >= (b); i -= (c))
-#define FRJ(a, b, c) for (int j = (a); j >= (b); j -= (c))
-#define FRO(a, b, c) for (int o = (a); o >= (b); o -= (c))
-#define FRQ(a, b, c) for (int q = (a); q >= (b); q -= (c))
-#define FRE(a, b, c) for (int e = (a); e >= (b); e -= (c))
-
-#define fx(A) for (auto &x : (A))
-#define fy(A) for (auto &y : (A))
-#define fz(A) for (auto &z : (A))
-
-#define pb push_back
-#define ins insert
-#define mt empty
-#define len(x) (int)(x).size()
-#define Len(x) (int)(x).size()
-#define sz(x) (int)x.size()
-
 #include <string>
 #include <vector>
 #include <list>
@@ -70,11 +27,29 @@
 
 using namespace std;
 
-#ifdef _DEBUG
-#define LOCAL
-#endif
+#define ln '\n'
+#define All(x) (x).begin(), (x).end()
+#define Alld(x) (x).rbegin(), (x).rend()
+#define Allf(x) (x).begin() + 1, (x).end()
 
-mt19937_64 rnd(chrono::steady_clock::now().time_since_epoch().count());
+#define fi(a, b) for (int i = (a); i <= (b); i++)
+#define fj(a, b) for (int j = (a); j <= (b); j++)
+#define fo(a, b) for (int o = (a); o <= (b); o++)
+#define fw(a, b) for (int w = (a); w <= (b); w++)
+
+#define fri(a, b) for (int i = (a); i >= (b); i--)
+#define frj(a, b) for (int j = (a); j >= (b); j--)
+#define fro(a, b) for (int o = (a); o >= (b); o--)
+#define frw(a, b) for (int w = (a); w >= (b); w--)
+
+#define fx(A) for (auto &x : (A))
+#define fy(A) for (auto &y : (A))
+#define fz(A) for (auto &z : (A))
+
+#define pb push_back
+#define ins insert
+#define mp make_pair
+#define sz(x) (int)x.size()
 
 typedef long long ll;
 typedef unsigned long long ull;
@@ -102,15 +77,24 @@ ostream& operator<<(ostream& os, pair<A, B> p) {
  
 template<typename T>
 ostream& operator<<(ostream& os, vector<T> v) {
-	fi(0, sz(v) - 1) {
-		os << v[i] << " ";
+	fz(v) {
+		os << z << " ";
+	}
+	return os;
+}
+
+template<typename T>
+ostream& operator<<(ostream& os, vector<vector<T>> v) {
+	os << ln;
+	fz(v) {
+		os << z << " ";
 	}
 	return os;
 }
  
 template<typename T>
 ostream& operator<<(ostream& os, set<T> t) {
-	for (auto z : t) {
+	fz(t) {
 		os << z << " ";
 	}
 	return os;
@@ -118,37 +102,34 @@ ostream& operator<<(ostream& os, set<T> t) {
  
 template<typename T1, typename T2>
 ostream& operator<<(ostream& os, map<T1, T2> t) {
-	cerr << endl;
-	for (auto z : t) {
-		os << "\t" << z.first << " -> " << z.second << endl;
+	os << ln;
+	fz(t) {
+		os << "\t" << z.first << " -> " << z.second << ln;
 	}
 	return os;
 }
  
 #ifdef LOCAL
-#define dbg(x) {cerr << __LINE__ << "\t" << #x << ": " << (x) << endl;}
+#define dbg(x) { cerr << __LINE__ << "\t" << #x << ": " << (x) << ln; }
 #else
 #define dbg(x) {}
 #endif
  
 #ifdef LOCAL
-#define ass(x) if (!(x)) { cerr << __LINE__ << "\tassertion failed: " << #x << endl, abort(); }
+#define ass(x) if (!(x)) { cerr << __LINE__ << "\tassertion failed: " << #x << ln; abort(); }
 #else
 #define ass(x) assert(x)
 #endif
 
+mt19937_64 rnd(chrono::steady_clock::now().time_since_epoch().count());
+
 
 
 void solve() {
-
-}
-
-void init() {
 	
 }
 
 #define FILE ""
-
 int main()
 {
     ios::sync_with_stdio(0);
@@ -161,10 +142,9 @@ int main()
         freopen(FILE".in", "r", stdin);
         freopen(FILE".out", "w", stdout);
     #endif
-    int t = 1;
-    //cin >> t;
-    while(t--) {
-		init();
-    	solve();
-	}
+    
+    
+    
+    solve();
+    return 0;
 }
