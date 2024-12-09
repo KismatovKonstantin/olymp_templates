@@ -1,0 +1,1 @@
+g++ --std=c++20 !.! -DLOCAL -O2 -Wall -Wl,--stack=67108864 -o !.exe

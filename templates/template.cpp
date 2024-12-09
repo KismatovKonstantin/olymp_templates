@@ -37,10 +37,10 @@ using namespace std;
 #define fo(a, b) for (int o = (a); o <= (b); o++)
 #define fw(a, b) for (int w = (a); w <= (b); w++)
 
-#define fri(a, b) for (int i = (a); i >= (b); i--)
-#define frj(a, b) for (int j = (a); j >= (b); j--)
-#define fro(a, b) for (int o = (a); o >= (b); o--)
-#define frw(a, b) for (int w = (a); w >= (b); w--)
+#define fdi(a, b) for (int i = (a); i >= (b); i--)
+#define fdj(a, b) for (int j = (a); j >= (b); j--)
+#define fdo(a, b) for (int o = (a); o >= (b); o--)
+#define fdw(a, b) for (int w = (a); w >= (b); w--)
 
 #define fx(A) for (auto &x : (A))
 #define fy(A) for (auto &y : (A))
