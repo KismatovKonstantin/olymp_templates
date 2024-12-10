@@ -1,4 +1,4 @@
-projectName = vu-acm-icpc-trd
+projectName = teambook_create
 
 gen:
 	xelatex -jobname=$(projectName) main.tex

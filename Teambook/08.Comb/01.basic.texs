@@ -1,0 +1,7 @@
+$Cat(n,k)=\frac{1}{n+1}C(2n,n)$
+
+$N(n,k)=\frac{1}{n}C(n,k)C(n, k - 1)$
+
+$\sum_{n=0}^{\inf}\sum_{k=1}^{n} N(n, k)z^{n}t^{k} = \frac{1+z(t-1)-\sqrt{1-2z(t+1)+z^2(t-1)^2}}{2z}$
+
+$S(n,k)=\sum_{j=0}^{k-1}(-1)^{j}C(k,j)\cdot(m-j)^n \; \; O(k \log{n})$
