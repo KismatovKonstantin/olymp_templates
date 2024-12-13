@@ -1,5 +1,5 @@
-double a, b; // входные данные
-const int n = 1000*1000; // количество шагов (уже умноженное на 2)
+double a, b;
+const int n = 1000*1000;
 double s = 0;
 double h = (b - a) / N;
 fi(0, n) {

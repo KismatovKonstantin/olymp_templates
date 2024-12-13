@@ -1,5 +1,5 @@
-const int MAXN = ...; // число вершин
-const int INF = 1000000000; // константа-бесконечность
+const int MAXN = ...;
+const int INF = 1000000000;
  
 struct edge {
 	int a, b, cap, flow;

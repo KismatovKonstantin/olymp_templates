@@ -6,4 +6,5 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
 # ** [Optional] Uncomment this section to install additional packages. **
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends texlive-base texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-lang-cyrillic texlive-metapost texlive-font-utils cm-super
+    && apt-get -y install --no-install-recommends texlive-base texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-lang-cyrillic texlive-metapost texlive-font-utils cm-super \
+	&& apt-get -y install python3

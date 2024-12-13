@@ -1,4 +1,4 @@
-latex file.tex
-latex file.tex
-dvipdfm file.dvi
+latex main.tex
+latex main.tex
+dvipdfm main.dvi
 rm *.aux *.log *.dvi
